@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'irb'
+require 'rubygems'
+require 'bundler'
+Bundler.setup :default, :console
+Bundler.require
+
+$: << "./lib"
+require 'stab_twice'
+
+IRB.start
